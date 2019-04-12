@@ -33,9 +33,18 @@ public class Main {
         System.out.println("Digite 2 - Subtração");
         System.out.println("Digite 3 - Divisão");
         System.out.println("Digite 4 - Multiplicação");
+        System.out.println("Digite 5 - Sair");
 
         opcaoOperacao = scannerOperacao.nextInt();
 
+        //Sair
+        if (opcaoOperacao == 5){
+            System.exit(0);
+
+        } else if(opcaoOperacao > 5){
+            System.out.println("Opção inválida");
+            System.exit(0);
+        }
 
         Scanner scannerNumeroA = new Scanner(System.in);
 
